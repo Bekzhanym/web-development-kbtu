@@ -1,0 +1,57 @@
+<article class="card">
+  <a [href]="product.link" target="_blank" rel="noopener noreferrer" class="card__link">
+    <div class="card__image-wrap">
+      <img
+        [src]="currentImage"
+        [alt]="product.name"
+        class="card__image"
+        loading="lazy"
+      />
+      @if (carouselImages.length > 1) {
+        <button
+          type="button"
+          class="card__carousel-btn card__carousel-btn--prev"
+          aria-label="Предыдущее фото"
+          (click)="prevImage(); $event.preventDefault(); $event.stopPropagation()"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          class="card__carousel-btn card__carousel-btn--next"
+          aria-label="Следующее фото"
+          (click)="nextImage(); $event.preventDefault(); $event.stopPropagation()"
+        >
+          ›
+        </button>
+      }
+    </div>
+    <h2 class="card__name">{{ product.name }}</h2>
+    <p class="card__description">{{ product.description }}</p>
+    <div class="card__rating" aria-label="Рейтинг: {{ product.rating }} из 5">
+      @for (i of fullStarsArray; track i) {
+        <span class="card__star card__star--full">★</span>
+      }
+      @if (hasHalfStar) {
+        <span class="card__star card__star--half">★</span>
+      }
+      @for (i of emptyStarsArray; track i) {
+        <span class="card__star card__star--empty">★</span>
+      }
+      <span class="card__rating-value">{{ product.rating }}</span>
+    </div>
+    <p class="card__price">{{ formattedPrice }}</p>
+  </a>
+  <div class="card__actions">
+    <div class="card__share">
+      <button
+        type="button"
+        class="card__share-btn"
+        (click)="shareViaWhatsApp(); $event.preventDefault()"
+        title="Поделиться в WhatsApp"
+      >
+        WhatsApp
+      </button>
+    </div>
+  </div>
+</article>

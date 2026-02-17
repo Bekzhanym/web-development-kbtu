@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "fddef88a-3c17-4dca-a711-31c9e47e6a7c"
+    "analytics": "0020a854-558b-4edc-ba04-208562d4ef95"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "lab4": {
+    "online-store": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lab4:build:production"
+              "buildTarget": "online-store:build:production"
             },
             "development": {
-              "buildTarget": "lab4:build:development"
+              "buildTarget": "online-store:build:development"
             }
           },
           "defaultConfiguration": "development"

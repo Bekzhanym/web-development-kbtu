@@ -1,0 +1,32 @@
+.product-list {
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-list__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  color: #1a1a1a;
+}
+
+.product-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .product-list {
+    padding: 1rem;
+  }
+
+  .product-list__title {
+    font-size: 1.5rem;
+  }
+
+  .product-list__grid {
+    grid-template-columns: 1fr;
+  }
+}
