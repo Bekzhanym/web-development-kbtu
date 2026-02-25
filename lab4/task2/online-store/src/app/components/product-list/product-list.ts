@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { ProductCard } from '../product-card/product-card';
 import { Product } from '../../models/product.model';
-import { PRODUCTS } from '../../data/products.data';
 
 @Component({
   selector: 'app-product-list',
@@ -10,5 +9,10 @@ import { PRODUCTS } from '../../data/products.data';
   styleUrl: './product-list.css',
 })
 export class ProductList {
-  products: Product[] = PRODUCTS;
+  products = input.required<Product[]>();
+  deleteProduct = output<number>();
+
+  onDelete(id: number): void {
+    this.deleteProduct.emit(id);
+  }
 }

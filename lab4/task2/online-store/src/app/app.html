@@ -2,6 +2,27 @@
   <h1 class="app-header__title">ИП BEKZHAN</h1>
   <p class="app-header__subtitle">Товары с Kaspi.kz</p>
 </header>
-<main>
-  <router-outlet />
+
+<nav class="app-nav">
+  @for (category of categories; track category.id) {
+    <button
+      type="button"
+      class="app-nav__btn"
+      [class.app-nav__btn--active]="isSelected(category.id)"
+      (click)="selectCategory(category.id)"
+    >
+      {{ category.name }}
+    </button>
+  }
+</nav>
+
+<main class="app-main">
+  @if (selectedCategoryId() === null) {
+    <p class="app-welcome">Выберите категорию выше, чтобы увидеть товары.</p>
+  } @else {
+    <app-product-list
+      [products]="currentProducts()"
+      (deleteProduct)="onDeleteProduct($event)"
+    />
+  }
 </main>

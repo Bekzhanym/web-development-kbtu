@@ -13,7 +13,9 @@ export const PRODUCTS: Product[] = [
       'https://resources.cdn-kaspi.kz/img/m/p/hac/h84/86201657229342.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/h03/he8/86201657360414.jpg?format=gallery-medium',
     ],
-    link: 'https://kaspi.kz/shop/p/bokserki-chernyi-119853159/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE',
+    link: 'https://kaspi.kz/shop/p/bokserki-chernyi-119853159/?c=750000000',
+    likes: 0,
+    categoryId: 1,
   },
   {
     id: 2,
@@ -27,7 +29,9 @@ export const PRODUCTS: Product[] = [
       'https://resources.cdn-kaspi.kz/img/m/p/p23/p68/15813989.jpeg?format=preview-large',
       'https://resources.cdn-kaspi.kz/img/m/p/p1e/pad/63245738.png?format=preview-large',
     ],
-    link: 'https://kaspi.kz/shop/p/bokserskie-perchatki-iba-10-oz-belyi-153067196/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/bokserskie-perchatki-iba-10-oz-belyi-153067196/?c=750000000',
+    likes: 0,
+    categoryId: 1,
   },
   {
     id: 3,
@@ -41,9 +45,11 @@ export const PRODUCTS: Product[] = [
       'https://resources.cdn-kaspi.kz/img/m/p/h6d/h56/85615018672158.jpg?format=preview-large',
       'https://resources.cdn-kaspi.kz/img/m/p/h6d/h56/85615018672158.jpg?format=preview-large',
     ],
-    link: 'https://resources.cdn-kaspi.kz/img/m/p/h9b/he4/85631757582366.png?format=preview-large'
+    link: 'https://kaspi.kz/shop/p/shelm-bokserskii-wesing/',
+    likes: 0,
+    categoryId: 1,
   },
-   {
+  {
     id: 4,
     name: 'Футбольная форма',
     description: 'Футболка манчестер сити',
@@ -55,9 +61,11 @@ export const PRODUCTS: Product[] = [
       'https://resources.cdn-kaspi.kz/img/m/p/pc1/p99/95681820.png?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/pf0/pa2/95684282.png?format=preview-large'
     ],
-    link: 'https://kaspi.kz/shop/p/futbolka-fk-manchester-siti-domashnjaja-forma-goluboi-46-154673350/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/futbolka-fk-manchester-siti-domashnjaja-forma-goluboi-46-154673350/?c=750000000',
+    likes: 0,
+    categoryId: 1,
   },
-    {
+  {
     id: 5,
     name: 'Перчатка для единоборств',
     description: 'Черепашка ММА',
@@ -68,67 +76,150 @@ export const PRODUCTS: Product[] = [
      'https://resources.cdn-kaspi.kz/img/m/p/p93/pf9/51716963.jpeg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/p29/pf6/51716964.jpeg?format=gallery-medium'
     ],
-    link: 'https://kaspi.kz/shop/p/rdx-cherepashki-dlja-mma-krasnyi-xl-142138822/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/rdx-cherepashki-dlja-mma-krasnyi-xl-142138822/?c=750000000',
+    likes: 0,
+    categoryId: 1,
   },
-   {
+  {
     id: 6,
-    name: 'Ражгард',
-    description: 'Ражгард ММА',
-    price: 18000,
-    rating: 2.0,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/pb1/p73/97213963.jpeg?format=gallery-medium',
+    name: 'Сушилка',
+    description: ' Сушилка',
+    price: 2000,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h84/h0b/83580691808286.jpg?format=preview-large',
     images: [
-     'https://resources.cdn-kaspi.kz/img/m/p/pb1/p73/97213963.jpeg?format=gallery-medium',
+     'https://resources.cdn-kaspi.kz/img/m/p/h84/h0b/83580691808286.jpg?format=preview-large',
     ],
-    link: 'https://kaspi.kz/shop/p/rashgard-green-krasnyi-155036774/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/otdel-nostojaschaja-979079-nerzhavejuschaja-stal--113162471/?c=750000000',
+    likes: 0,
+    categoryId: 2,
   },
-    {
+  {
     id: 7,
-    name: 'Шитки',
-    description: 'Щитки Venkaraxl черный XL',
+    name: 'Бумага для выпечки',
+    description: 'Qualita бумага для выпечки, для хранения продуктов 15 листов',
     price: 1894,
     rating: 5.0,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h54/h9f/70254687256606.jpg?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h98/hd5/82635919360030.png?format=preview-large',
     images: [
-     'https://resources.cdn-kaspi.kz/img/m/p/h54/h9f/70254687256606.jpg?format=gallery-medium',
+     'https://resources.cdn-kaspi.kz/img/m/p/h98/hd5/82635919360030.png?format=preview-large',
     ],
-    link: 'https://kaspi.kz/shop/p/venkaraxl-chernyi-xl-109435704/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/qualita-bumaga-dlja-vypechki-dlja-hranenija-produktov-15-listov-101178551/?c=750000000',
+    likes: 0,
+    categoryId: 2,
   },
   {
     id: 8,
-    name: 'Кимано',
-    description: 'Кимоно для карате белый 150',
-    price: 4993,
+    name: 'Лоток вкладыш',
+    description: 'Лоток-вкладыш пластик, полипропилен',
+    price: 1500,
     rating: 4.5,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/p00/pda/63394180.png?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h78/h43/84935525040158.jpg?format=preview-large',
     images: [
-     'https://resources.cdn-kaspi.kz/img/m/p/p00/pda/63394180.png?format=gallery-medium',
+'https://resources.cdn-kaspi.kz/img/m/p/h78/h43/84935525040158.jpg?format=preview-large'
     ],
-    link: 'https://kaspi.kz/shop/p/kimono-dlja-karate-468365587-belyi-150-145369916/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'},
-    {
+    link: 'https://kaspi.kz/shop/p/lotok-vkladysh-280266-plastik-polipropilen-114898450/?c=750000000',
+    likes: 0,
+    categoryId: 2,
+  },
+  {
     id: 9,
-    name: 'Шитки',
-    description: 'Щитки Venkaraxl черный XL',
+    name: 'Подставка',
+    description: 'Подставка пластик',
     price: 1894,
     rating: 5.0,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/pee/p1c/5247417.jpg?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p3f/pd2/25969119.jpg?format=preview-large',
     images: [
-     'https://resources.cdn-kaspi.kz/img/m/p/pee/p1c/5247417.jpg?format=gallery-medium',
-     'https://resources.cdn-kaspi.kz/img/m/p/p0a/p1d/5247418.jpg?format=gallery-medium'
+     'https://resources.cdn-kaspi.kz/img/m/p/p3f/pd2/25969119.jpg?format=preview-large',
+     'https://resources.cdn-kaspi.kz/img/m/p/p3f/pd2/25969119.jpg?format=preview-large'
     ],
-    link: 'https://kaspi.kz/shop/p/bortsovki-chernyi-129084369/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/podstavka-nikkos-plastik-124340629/?c=750000000',
+    likes: 0,
+    categoryId: 2,
+  },
+  {
+    id: 10,
+    name: 'Манеж',
+    description: 'Игровой манеж SA collection 128x109x107 см, синий',
+    price: 2000,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h68/h18/84636737503262.jpg?format=preview-large',
+    images: [
+     'https://resources.cdn-kaspi.kz/img/m/p/h68/h18/84636737503262.jpg?format=preview-large',
+    ],
+    link: 'https://kaspi.kz/shop/p/igrovoi-manezh-128x109x107-sm-sinii-115063821/?c=750000000',
+    likes: 0,
+    categoryId: 3,
+  },
+  {
+    id: 11,
+    name: 'Палатка',
+    description: 'Палатка Koopman X61900570',
+    price: 1100,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p5f/p38/11770563.jpg?format=preview-large',
+    images: [
+     'https://resources.cdn-kaspi.kz/img/m/p/p5f/p38/11770563.jpg?format=preview-large',
+    ],
+    link: 'https://kaspi.kz/shop/p/palatka-koopman-x61900570-131015073/?c=750000000',
+    likes: 0,
+    categoryId: 3,
+  },
+  {
+    id: 12,
+    name: 'Кока кола',
+    description: 'Coca-Cola газированный напиток кола 2 л',
+    price: 890,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p9f/pc6/97763104.jpg?format=preview-large',
+    images: [
+     'https://resources.cdn-kaspi.kz/img/m/p/p9f/pc6/97763104.jpg?format=preview-large',
+    ],
+    link: 'https://kaspi.kz/shop/p/coca-cola-classic-gazirovannyi-napitok-2-l-100208094/?c=750000000',
+    likes: 0,
+    categoryId: 4,
   },
    {
-    id: 10,
-    name: 'Борцовка',
-    description: 'Борцовка черный',
-    price: 22994,
+    id: 13,
+    name: 'Fanta',
+    description: 'Fanta газированный напиток апельсин 2 л',
+    price: 880,
     rating: 5.0,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/p85/p71/3017104.jpeg?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h68/h18/84636737503262.jpg?format=preview-large',
     images: [
-     'https://resources.cdn-kaspi.kz/img/m/p/pef/p74/3017105.jpeg?format=gallery-medium',
-     'https://resources.cdn-kaspi.kz/img/m/p/p85/p71/3017104.jpeg?format=gallery-medium'
+     'https://resources.cdn-kaspi.kz/img/m/p/h68/h18/84636737503262.jpg?format=preview-large',
     ],
-    link: 'https://kaspi.kz/shop/p/bortsovki-chernyi-128487546/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_automnotive_equipments_v2&gbraid=0AAAAAC7-v7jiYy1KeeXws5EX0YrQymcsk&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1JroFR-Myi3tuNfPKt6pP7hsFF0b_Hoq4y6AGaFcqz5WoPYvMxGgehoCPGcQAvD_BwE'
+    link: 'https://kaspi.kz/shop/p/fanta-gazirovannyi-napitok-apel-sin-2-l-100208121/?c=750000000',
+    likes: 0,
+    categoryId: 4,
   },
+  {
+    id: 14,
+    name: 'Блинчики',
+    description: 'MAGNUM блинчики классические 400 г',
+    price:  800,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h9d/h51/64367074050078.jpg?format=preview-large',
+    images: [
+     'https://resources.cdn-kaspi.kz/img/m/p/h9d/h51/64367074050078.jpg?format=preview-large',
+    ],
+    link: 'https://kaspi.kz/shop/p/magnum-blinchiki-klassicheskie-400-g-103274746/?c=750000000',
+    likes: 0,
+    categoryId: 4,
+  },
+  {
+    id: 15,
+    name: 'Холодец',
+    description: 'MAGNUM холодец 500 г',
+    price:  800,
+    rating: 5.0,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hdd/h01/87213262766110.jpg?format=preview-large',
+    images: [
+     'https://resources.cdn-kaspi.kz/img/m/p/hdd/h01/87213262766110.jpg?format=preview-large',
+    ],
+    link: 'https://kaspi.kz/shop/p/magnum-holodets-500-g-123947051/?c=750000000',
+    likes: 0,
+    categoryId: 4,
+  },
+
 ];

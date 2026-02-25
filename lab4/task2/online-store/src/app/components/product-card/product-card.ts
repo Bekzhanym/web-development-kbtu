@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, output, signal, computed } from '@angular/core';
 import { Product } from '../../models/product.model';
 
 @Component({
@@ -8,22 +8,31 @@ import { Product } from '../../models/product.model';
   styleUrl: './product-card.css',
 })
 export class ProductCard {
-  @Input({ required: true }) product!: Product;
-
-  currentImageIndex = 0;
+  product = input.required<Product>();
+  deleteProduct = output<number>();
 
   private readonly whatsAppNumber = '77478369037';
 
+  likesCount = signal(0);
+
+  displayedLikes = computed(() => {
+    const p = this.product();
+    return p.likes + this.likesCount();
+  });
+
   get carouselImages(): string[] {
-    if (this.product.images?.length) {
-      return this.product.images;
+    const p = this.product();
+    if (p.images?.length) {
+      return p.images;
     }
-    return [this.product.image];
+    return [p.image];
   }
 
   get currentImage(): string {
-    return this.carouselImages[this.currentImageIndex] ?? this.product.image;
+    return this.carouselImages[this.currentImageIndex] ?? this.product().image;
   }
+
+  currentImageIndex = 0;
 
   prevImage(): void {
     this.currentImageIndex =
@@ -39,18 +48,32 @@ export class ProductCard {
         : this.currentImageIndex + 1;
   }
 
+  like(): void {
+    this.likesCount.update((n) => n + 1);
+  }
+
+  remove(): void {
+    this.deleteProduct.emit(this.product().id);
+  }
+
   shareViaWhatsApp(): void {
-    const text = `Check out this product: ${this.product.link}`;
+    const text = `Check out this product: ${this.product().link}`;
     const url = `https://wa.me/${this.whatsAppNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   }
 
+  shareViaTelegram(): void {
+    const text = encodeURIComponent(`Check out this product: ${this.product().link}`);
+    const url = `https://t.me/share/url?url=${encodeURIComponent(this.product().link)}&text=${text}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+
   get fullStars(): number {
-    return Math.floor(this.product.rating);
+    return Math.floor(this.product().rating);
   }
 
   get hasHalfStar(): boolean {
-    return this.product.rating % 1 >= 0.5;
+    return this.product().rating % 1 >= 0.5;
   }
 
   get emptyStars(): number {
@@ -66,9 +89,11 @@ export class ProductCard {
   }
 
   get formattedPrice(): string {
-    return new Intl.NumberFormat('kk-KZ', {
-      style: 'decimal',
-      minimumFractionDigits: 0,
-    }).format(this.product.price) + ' ₸';
+    return (
+      new Intl.NumberFormat('kk-KZ', {
+        style: 'decimal',
+        minimumFractionDigits: 0,
+      }).format(this.product().price) + ' ₸'
+    );
   }
 }

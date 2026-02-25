@@ -1,4 +1,4 @@
-const form = document.querySelector('#todo-form');
+const form = document.querySelector('#task-input');
 const input = document.querySelector('#task-input');
 const list = document.querySelector('#todo-list');
 

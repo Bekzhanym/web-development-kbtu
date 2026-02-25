@@ -127,17 +127,70 @@
   font-size: 1.125rem;
   font-weight: 700;
   color: #e53935;
-  margin: 0.5rem 1rem 1rem;
+  margin: 0.5rem 1rem 0;
+}
+
+.card__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 1rem 0;
+}
+
+.card__likes {
+  font-size: 0.9rem;
+  color: #c62828;
+  font-weight: 500;
 }
 
 .card__actions {
-  padding: 0 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.card__btn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.card__btn:active {
+  transform: scale(0.98);
+}
+
+.card__btn--like {
+  background: #ffebee;
+  color: #c62828;
+  border-color: #ffcdd2;
+}
+
+.card__btn--like:hover {
+  background: #ffcdd2;
+}
+
+.card__btn--delete {
+  background: #ffebee;
+  color: #b71c1c;
+  border-color: #ef9a9a;
+}
+
+.card__btn--delete:hover {
+  background: #ffcdd2;
+  color: #b71c1c;
 }
 
 .card__share {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .card__share-btn {
@@ -158,4 +211,10 @@
   background: #e8f5e9;
   border-color: #25d366;
   color: #25d366;
+}
+
+.card__share-btn--tg:hover {
+  border-color: #0088cc;
+  color: #0088cc;
+  background: #e3f2fd;
 }
